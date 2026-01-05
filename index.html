@@ -205,12 +205,17 @@
             -->
             <div class="mt-8 md:mt-0 md:order-1">
                 <p class="text-center text-base text-gray-400">
-                    &copy; 2025 RapidTest. Todos los derechos reservados.
+                    &copy; <span id="year"></span> RapidTest. Todos los derechos reservados.
+                    <span class="mx-2">|</span>
+                    <a href="/privacy/" class="hover:text-gray-300">Política de Privacidad</a>
                 </p>
             </div>
         </div>
     </footer>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
